@@ -44,13 +44,8 @@ python -m eightfold_profile --csv samples/recruiter.csv --pdf samples/resume.pdf
 python -m eightfold_profile --csv samples/recruiter.csv --pdf samples/resume.pdf --config config/minimal_config.json --pretty
 ```
 
-### 6. Write the output to a JSON file
 
-```bash
-python -m eightfold-profile --csv samples/recruiter.csv --pdf samples/resume.pdf --output samples/output.json
-```
-
-### 7. Run the tests
+### 6. Run the tests
 
 ```bash
 pytest
