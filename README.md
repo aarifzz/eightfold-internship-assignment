@@ -133,7 +133,3 @@ The repository includes tests for:
 - Validation
 - Pipeline execution
 - Provenance projection
-
-## License
-
-MIT (sample / educational project)
