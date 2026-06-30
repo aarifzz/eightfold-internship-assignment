@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eightfold-profile"
+version = "1.0.0"
+description = "Merge recruiter CSV and resume PDF into a canonical candidate profile"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.21",
+    "phonenumbers>=8.13",
+    "pdfplumber>=0.11",
+    "python-dateutil>=2.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+eightfold-profile = "eightfold_profile.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

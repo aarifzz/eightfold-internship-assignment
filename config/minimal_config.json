@@ -1,0 +1,20 @@
+{
+  "output_fields": [
+    "candidate_id",
+    "full_name",
+    "emails",
+    "phones",
+    "location",
+    "links",
+    "headline",
+    "years_experience",
+    "skills",
+    "experience",
+    "education"
+  ],
+  "field_mapping": {},
+  "include_confidence": false,
+  "include_provenance": false,
+  "missing_value_behavior": "null",
+  "default_country_code": "US"
+}

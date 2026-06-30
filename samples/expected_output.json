@@ -1,0 +1,236 @@
+{
+  "candidate_id": "CAND-1001",
+  "full_name": "Jane Doe",
+  "emails": [
+    "jane.doe@example.com",
+    "jane.doe@work-email.com"
+  ],
+  "phones": [
+    "+14155550199",
+    "+14155550101"
+  ],
+  "location": {
+    "city": "San Francisco",
+    "region": "CA",
+    "country": "US"
+  },
+  "links": {
+    "linkedin": "https://linkedin.com/in/janedoe",
+    "github": "https://github.com/janedoe",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": "Strong backend focus with distributed systems experience.",
+  "years_experience": 7.0,
+  "skills": [
+    {
+      "name": "AWS",
+      "confidence": 0.95,
+      "sources": [
+        "recruiter_csv",
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "Docker",
+      "confidence": 0.76,
+      "sources": [
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "confidence": 0.95,
+      "sources": [
+        "recruiter_csv",
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "confidence": 0.95,
+      "sources": [
+        "recruiter_csv",
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "confidence": 0.76,
+      "sources": [
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.95,
+      "sources": [
+        "recruiter_csv",
+        "resume_pdf"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "confidence": 0.76,
+      "sources": [
+        "resume_pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Acme Corp",
+      "title": "Senior Software Engineer",
+      "start": "2022-01",
+      "summary": "Built APIs and data pipelines using Python, AWS, and Kubernetes."
+    },
+    {
+      "company": "Beta Labs",
+      "title": "Software Engineer",
+      "start": "2018-06",
+      "end": "2021-12",
+      "summary": "Developed microservices with JavaScript, Node.js, and PostgreSQL."
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University",
+      "degree": "B.S",
+      "field": "Computer Science",
+      "end_year": 2018
+    }
+  ],
+  "provenance": [
+    {
+      "field": "candidate_id",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "first_name",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "first_name",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "last_name",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "last_name",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "full_name",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "current_title",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "current_title",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "current_company",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "current_company",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "linkedin_url",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "linkedin_url",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "github_url",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "github_url",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "total_years_experience",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "summary",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "location",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "location",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "emails[0]",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "emails[0]",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "phones[0]",
+      "source": "recruiter_csv",
+      "method": "csv_parser.parse_recruiter_csv"
+    },
+    {
+      "field": "phones[0]",
+      "source": "resume_pdf",
+      "method": "pdf_parser.parse_resume_pdf"
+    },
+    {
+      "field": "skills",
+      "source": "recruiter_csv",
+      "method": "normalization.canonicalize_skills"
+    },
+    {
+      "field": "skills",
+      "source": "resume_pdf",
+      "method": "normalization.canonicalize_skills"
+    },
+    {
+      "field": "experience",
+      "source": "resume_pdf",
+      "method": "merger._merge_list_entries.experience"
+    },
+    {
+      "field": "education",
+      "source": "resume_pdf",
+      "method": "merger._merge_list_entries.education"
+    }
+  ],
+  "overall_confidence": 0.9083
+}

@@ -1,0 +1,2 @@
+candidate_id,first_name,last_name,email,phone,location,current_title,current_company,skills,linkedin_url,github_url,years_experience,notes
+CAND-1001,Jane,Doe,jane.doe@example.com,(415) 555-0199,"San Francisco, CA",Senior Software Engineer,Acme Corp,"Python; JavaScript; AWS; Kubernetes",https://linkedin.com/in/janedoe,https://github.com/janedoe,7,"Strong backend focus with distributed systems experience."

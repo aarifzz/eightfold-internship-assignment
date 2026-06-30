@@ -1,0 +1,48 @@
+{
+  "candidate_id": "CAND-1001",
+  "full_name": "Jane Doe",
+  "emails": [
+    "jane.doe@example.com",
+    "jane.doe@work-email.com"
+  ],
+  "phones": [
+    "+14155550199",
+    "+14155550101"
+  ],
+  "location": {
+    "formatted": "San Francisco, CA",
+    "country": "US",
+    "city": "San Francisco",
+    "state": "CA"
+  },
+  "skills": [
+    "AWS",
+    "Docker",
+    "JavaScript",
+    "Kubernetes",
+    "PostgreSQL",
+    "Python",
+    "TypeScript"
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Acme Corp",
+      "start_date": "2022-01",
+      "summary": "Built APIs and data pipelines using Python, AWS, and Kubernetes. Software Engineer | Beta Labs"
+    },
+    {
+      "start_date": "2018-06",
+      "end_date": "2021-12",
+      "summary": "Developed microservices with JavaScript, Node.js, and PostgreSQL."
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University",
+      "degree": "B.S",
+      "field": "Computer Science",
+      "graduation_date": "2018-01"
+    }
+  ]
+}
