@@ -35,31 +35,56 @@ flowchart LR
 | `pipeline.py` | Orchestrates the full flow |
 | `cli.py` | `argparse` entry point |
 
-## How to run the CLI
+## How to Run the CLI
+
+### 1. Clone the repository
 
 ```bash
-cd eightfold
+git clone https://github.com/aarifzz/eightfold-internship-assignment.git
+cd eightfold-internship-assignment
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate          # Windows
+```
+
+**Windows (CMD)**
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install the package
+
+```bash
 pip install -r requirements.txt
-pip install -e .
+python -m pip install -e .
+```
 
-# Generate sample resume PDF (if needed)
-python scripts/generate_sample_pdf.py
+### 4. Run the pipeline (default configuration)
 
-# Run with full metadata
-python -m eightfold_profile \
-  --csv samples/recruiter.csv \
-  --pdf samples/resume.pdf \
-  --config config/sample_config.json \
-  --candidate-id CAND-1001 \
-  --pretty
+```bash
+python -m eightfold_profile --csv samples/recruiter.csv --pdf samples/resume.pdf --config config/sample_config.json --pretty
+```
 
-# Write to file
-eightfold-profile \
-  --csv samples/recruiter.csv \
-  --pdf samples/resume.pdf \
-  -o samples/output.json
+### 5. Run with the minimal configuration
+
+```bash
+python -m eightfold_profile --csv samples/recruiter.csv --pdf samples/resume.pdf --config config/minimal_config.json --pretty
+```
+
+### 6. Write the output to a JSON file
+
+```bash
+eightfold-profile --csv samples/recruiter.csv --pdf samples/resume.pdf --output samples/output.json
+```
+
+### 7. Run the tests
+
+```bash
+pytest
 ```
 
 **CLI flags**
