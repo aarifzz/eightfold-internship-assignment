@@ -59,7 +59,6 @@ pytest
 | `--pdf` | Resume PDF path (required; missing/malformed PDF falls back to CSV-only) |
 | `--config` | Runtime JSON config |
 | `--candidate-id` | Select row when CSV has multiple candidates |
-| `-o`, `--output` | Write JSON to file |
 | `--pretty` | Pretty-print JSON to stdout |
 
 
